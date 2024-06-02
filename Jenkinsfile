@@ -1,5 +1,5 @@
 pipeline {
-    agent { node { label "codespaces-f12239" } } 
+    agent { node { label "master" } } 
     parameters {
                 choice(name: 'deploy_choice', choices:['apply','destroy'],description:'The deployment type')
                   }
